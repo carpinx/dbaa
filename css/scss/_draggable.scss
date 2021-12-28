@@ -1,0 +1,28 @@
+.draggable {
+    cursor: move;
+    transition: z-index .3s;
+
+    img, video, .carousel {
+        filter: grayscale(.8);
+        transition: filter .3s, opacity .3s;
+        max-width: 100%;
+        object-fit: cover;
+
+        @include movil {
+            filter: none;
+            pointer-events: none;
+        }
+    }
+
+    &:hover {
+        z-index: 999;
+
+        img, video, .carousel {
+            filter: grayscale(0);
+        }
+    }
+
+    &.active {
+        z-index: 999;
+    }
+}

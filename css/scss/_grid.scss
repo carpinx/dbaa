@@ -1,0 +1,60 @@
+main {  
+    display: grid;
+    grid-template-columns: .5fr repeat(16, 1fr) .5fr;
+    grid-template-rows: .5fr repeat(109, 1fr);
+    gap: 0px 0px;
+    grid-auto-flow: row;
+}
+
+.logo {
+    grid-area: 2 / 2 / span 1 / span 3;
+    max-width: 100%;
+}
+
+.forma1 {
+    grid-area: 2 / 11 / span 3 / span 8;
+    max-width: 100%;
+    justify-self: flex-end;
+    align-self: center;
+}
+
+.fontes {
+    grid-area: 7 / 3 / span 6 / span 7;
+    max-width: 100%;
+}
+
+.quienesSomos {
+    grid-area: 8 / 11 / span 5 / span 6;
+}
+
+.palto {
+    grid-area: 14 / 12 / span 12 / span 5;
+    max-width: 100%;
+}
+
+.forma2 {
+    grid-area: 14 / 1 / span 15 / span 7;
+    max-width: 100%;
+    z-index: -1;
+}
+
+.maradona {
+    grid-area: 21 / 3 / span 6 / span 7;
+
+    video {
+        max-width: 100%;
+    }
+}
+
+.queOfrecemos {
+    grid-area: 29 / 4 / span 3 / span 6;
+}
+
+.orland {
+    grid-area: 29 / 13 / span 9 / span 6;
+    max-width: 100%;
+}
+
+.orland2 {
+    grid-area: 35 / 4 / span 7 / span 7;
+}
