@@ -7,7 +7,7 @@ main {
 }
 
 .logo {
-    grid-area: 2 / 2 / span 1 / span 3;
+    grid-area: 2 / 3 / span 1 / span 3;
     max-width: 100%;
 }
 
@@ -19,16 +19,16 @@ main {
 }
 
 .fontes {
-    grid-area: 7 / 3 / span 6 / span 7;
+    grid-area: 5 / 3 / span 6 / span 7;
     max-width: 100%;
 }
 
 .quienesSomos {
-    grid-area: 8 / 11 / span 5 / span 6;
+    grid-area: 6 / 11 / span 5 / span 5;
 }
 
 .palto {
-    grid-area: 14 / 12 / span 12 / span 5;
+    grid-area: 12 / 12 / span 12 / span 5;
     max-width: 100%;
 }
 

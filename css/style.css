@@ -118,9 +118,9 @@ main {
 .logo {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
-  -ms-grid-column: 2;
+  -ms-grid-column: 3;
   -ms-grid-column-span: 3;
-  grid-area: 2 / 2 / span 1 / span 3;
+  grid-area: 2 / 3 / span 1 / span 3;
   max-width: 100%;
 }
 
@@ -138,28 +138,28 @@ main {
 }
 
 .fontes {
-  -ms-grid-row: 7;
+  -ms-grid-row: 5;
   -ms-grid-row-span: 6;
   -ms-grid-column: 3;
   -ms-grid-column-span: 7;
-  grid-area: 7 / 3 / span 6 / span 7;
+  grid-area: 5 / 3 / span 6 / span 7;
   max-width: 100%;
 }
 
 .quienesSomos {
-  -ms-grid-row: 8;
+  -ms-grid-row: 6;
   -ms-grid-row-span: 5;
   -ms-grid-column: 11;
-  -ms-grid-column-span: 6;
-  grid-area: 8 / 11 / span 5 / span 6;
+  -ms-grid-column-span: 5;
+  grid-area: 6 / 11 / span 5 / span 5;
 }
 
 .palto {
-  -ms-grid-row: 14;
+  -ms-grid-row: 12;
   -ms-grid-row-span: 12;
   -ms-grid-column: 12;
   -ms-grid-column-span: 5;
-  grid-area: 14 / 12 / span 12 / span 5;
+  grid-area: 12 / 12 / span 12 / span 5;
   max-width: 100%;
 }
 
