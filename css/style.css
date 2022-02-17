@@ -65,8 +65,36 @@ p {
   margin: 0;
 }
 
+/* CURSOR */
+* {
+  cursor: none !important;
+}
+
+body {
+  position: absolute;
+  height: 100%;
+}
+
+.cursor {
+  position: absolute;
+  width: 40px;
+  height: 24px;
+  top: -50%;
+  left: -50%;
+  margin: -15px 0 0 -15px;
+  border-radius: 50%;
+  background-image: url("../img/cursor.svg");
+  mix-blend-mode: difference;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+.content_cursor {
+  position: relative;
+  height: 100%;
+}
+
 .draggable {
-  cursor: move;
   -webkit-transition: z-index .3s;
   transition: z-index .3s;
 }
@@ -122,6 +150,21 @@ main {
   grid-auto-flow: row;
 }
 
+@media screen and (max-width: 576px) {
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2rem;
+    padding: 3rem 4rem;
+    position: relative;
+  }
+}
+
 .logo {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
@@ -142,6 +185,12 @@ main {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+@media screen and (max-width: 576px) {
+  .forma1 {
+    display: none;
+  }
 }
 
 .laundry {
@@ -178,6 +227,12 @@ main {
   grid-area: 10 / 1 / span 15 / span 7;
   max-width: 100%;
   z-index: -1;
+}
+
+@media screen and (max-width: 576px) {
+  .forma2 {
+    display: none;
+  }
 }
 
 .maradona {
@@ -268,6 +323,12 @@ main {
   z-index: -1;
 }
 
+@media screen and (max-width: 576px) {
+  .forma3 {
+    display: none;
+  }
+}
+
 .oraculo {
   -ms-grid-row: 41;
   -ms-grid-row-span: 9;
@@ -286,6 +347,12 @@ main {
   height: 100%;
   justify-self: flex-end;
   z-index: -1;
+}
+
+@media screen and (max-width: 576px) {
+  .forma4 {
+    display: none;
+  }
 }
 
 .nicanor {
