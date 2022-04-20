@@ -126,6 +126,23 @@ body {
   margin-top: 1rem;
 }
 
+.draggable.carousel .carousel-indicators > button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid #727272;
+}
+
+.draggable.carousel .carousel-control-next, .draggable.carousel .carousel-control-prev {
+  bottom: unset;
+  top: 2rem;
+}
+
+.draggable.carousel .carousel-control-next-icon, .draggable.carousel .carousel-control-prev-icon {
+  width: 5rem;
+  height: 5rem;
+}
+
 .draggable:hover {
   z-index: 999;
 }
@@ -406,7 +423,7 @@ main {
   line-height: 1;
 }
 
-.imgHome p {
+.imgHome p, .carousel p {
   font-family: "Graphik", sans-serif;
   letter-spacing: 0.3px;
   font-size: 1.4rem;
@@ -418,7 +435,7 @@ main {
   transition: opacity .3s;
 }
 
-.imgHome:hover p {
+.imgHome:hover p, .carousel:hover p {
   opacity: 1;
 }
 
@@ -473,6 +490,10 @@ main {
   color: white;
 }
 
+.footerTop .textoFooter a {
+  color: white;
+}
+
 .footerTop .textoFooter h4 {
   font-size: 2.2rem;
   text-transform: uppercase;
@@ -507,8 +528,20 @@ main {
 }
 
 .footerTop .textoFooter p.texto {
-  font-style: italic;
   font-weight: 600;
+}
+
+.footerTop .textoFooter__logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .footerTop .lineaFooter {
@@ -521,9 +554,9 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   padding-bottom: 8rem;
 }
 
@@ -532,6 +565,7 @@ main {
   font-size: 2.2rem;
   font-family: "Helvetica", sans-serif;
   margin-bottom: 2rem;
+  text-align: center;
 }
 
 .footerBottom__col__img {
@@ -542,8 +576,33 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+
+.footbotcontainer {
+  position: relative;
+}
+
+.footbotcontainer::before {
+  content: '';
+  width: 16rem;
+  height: 1px;
+  background-color: white;
+  position: absolute;
+  left: 0px;
+  top: 50%;
+}
+
+.footbotcontainer::after {
+  content: '';
+  width: 16rem;
+  height: 1px;
+  background-color: white;
+  position: absolute;
+  right: 0px;
+  top: 50%;
 }
 /*# sourceMappingURL=style.css.map */

@@ -30,6 +30,10 @@
     
     .textoFooter {
         color: white;
+
+        a {
+            color: white;
+        }
     
         h4 {
             font-size: 2.2rem;
@@ -65,8 +69,14 @@
         }
     
         p.texto {
-            font-style: italic;
             font-weight: 600;
+        }
+
+        &__logos {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            justify-content: flex-start;
         }
     }
     
@@ -79,7 +89,7 @@
 
 .footerBottom {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding-bottom: 8rem;
 
     &__col {
@@ -89,13 +99,40 @@
             font-size: 2.2rem;
             font-family: "Helvetica", sans-serif;
             margin-bottom: 2rem;
+            text-align: center;
         }
 
         &__img {
             display: flex;
             gap: 2rem;
             align-items: center;
-            justify-content: space-between;
+            justify-content: center;
+            height: 100%;
         }
+    }
+}
+
+
+.footbotcontainer {
+    position: relative;
+
+    &::before {
+        content: '';
+        width: 16rem;
+        height: 1px;
+        background-color: white;
+        position: absolute;
+        left: 0px;
+        top: 50%;
+    }
+
+    &::after {
+        content: '';
+        width: 16rem;
+        height: 1px;
+        background-color: white;
+        position: absolute;
+        right: 0px;
+        top: 50%;
     }
 }
