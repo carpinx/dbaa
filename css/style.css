@@ -65,35 +65,6 @@ p {
   margin: 0;
 }
 
-/* CURSOR */
-* {
-  cursor: none !important;
-}
-
-body {
-  position: absolute;
-  height: 100%;
-}
-
-.cursor {
-  position: absolute;
-  width: 40px;
-  height: 24px;
-  top: -50%;
-  left: -50%;
-  margin: -15px 0 0 -15px;
-  border-radius: 50%;
-  background-image: url("../img/cursor.svg");
-  mix-blend-mode: difference;
-  z-index: 1000;
-  pointer-events: none;
-}
-
-.content_cursor {
-  position: relative;
-  height: 100%;
-}
-
 .draggable {
   -webkit-transition: z-index .3s;
   transition: z-index .3s;
@@ -439,6 +410,10 @@ main {
   opacity: 1;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 .footerTop {
   margin-bottom: 8rem;
 }
@@ -472,7 +447,7 @@ main {
 }
 
 .footerTop__segunda img {
-  max-height: 90%;
+  position: absolute;
 }
 
 .footerTop__tercera {
@@ -557,6 +532,9 @@ main {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-bottom: 8rem;
 }
 
@@ -580,29 +558,5 @@ main {
       -ms-flex-pack: center;
           justify-content: center;
   height: 100%;
-}
-
-.footbotcontainer {
-  position: relative;
-}
-
-.footbotcontainer::before {
-  content: '';
-  width: 16rem;
-  height: 1px;
-  background-color: white;
-  position: absolute;
-  left: 0px;
-  top: 50%;
-}
-
-.footbotcontainer::after {
-  content: '';
-  width: 16rem;
-  height: 1px;
-  background-color: white;
-  position: absolute;
-  right: 0px;
-  top: 50%;
 }
 /*# sourceMappingURL=style.css.map */

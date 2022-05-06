@@ -18,7 +18,7 @@
         justify-content: center;
     
         img {
-            max-height: 90%;
+            position: absolute;
         }
     }
     
@@ -90,6 +90,7 @@
 .footerBottom {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     padding-bottom: 8rem;
 
     &__col {
@@ -109,30 +110,5 @@
             justify-content: center;
             height: 100%;
         }
-    }
-}
-
-
-.footbotcontainer {
-    position: relative;
-
-    &::before {
-        content: '';
-        width: 16rem;
-        height: 1px;
-        background-color: white;
-        position: absolute;
-        left: 0px;
-        top: 50%;
-    }
-
-    &::after {
-        content: '';
-        width: 16rem;
-        height: 1px;
-        background-color: white;
-        position: absolute;
-        right: 0px;
-        top: 50%;
     }
 }
