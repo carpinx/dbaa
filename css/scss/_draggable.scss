@@ -8,7 +8,6 @@
         object-fit: cover;
 
         @include movil {
-            filter: none;
             pointer-events: none;
         }
     }

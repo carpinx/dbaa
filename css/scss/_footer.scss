@@ -9,6 +9,27 @@
     
         img {
             max-width: 100%;
+
+            @include movil {
+                align-self: center;
+            }
+        }
+
+        .logoCamara {
+            
+            @include movil {
+                max-width: 294px;
+            }
+        }
+
+        .textoFooter {
+
+            .texto {
+
+                @include movil {
+                    text-align: center;
+                }
+            }
         }
     }
     
@@ -20,12 +41,24 @@
         img {
             position: absolute;
         }
+
+        @include movil {
+            display: none;
+        }
     }
     
     &__tercera {
         display: flex;
         flex-direction: column;
         gap: 2rem;
+
+        .textoFooter {
+            margin-top: 30px;
+            
+            @include movil {
+                text-align: center;
+            }
+        }
     }
     
     .textoFooter {
@@ -77,6 +110,10 @@
             gap: 2rem;
             align-items: center;
             justify-content: flex-start;
+
+            @include movil {
+                justify-content: center;
+            }
         }
     }
     
@@ -92,6 +129,11 @@
     justify-content: space-evenly;
     align-items: center;
     padding-bottom: 8rem;
+
+    @include movil {
+        flex-direction: column;
+        gap: 30px;
+    }
 
     &__col {
 

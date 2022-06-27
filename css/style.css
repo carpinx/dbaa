@@ -84,8 +84,6 @@ p {
 
 @media screen and (max-width: 576px) {
   .draggable img, .draggable video {
-    -webkit-filter: none;
-            filter: none;
     pointer-events: none;
   }
 }
@@ -434,6 +432,26 @@ a:hover {
   max-width: 100%;
 }
 
+@media screen and (max-width: 576px) {
+  .footerTop__primera img {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .footerTop__primera .logoCamara {
+    max-width: 294px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .footerTop__primera .textoFooter .texto {
+    text-align: center;
+  }
+}
+
 .footerTop__segunda {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -450,6 +468,12 @@ a:hover {
   position: absolute;
 }
 
+@media screen and (max-width: 576px) {
+  .footerTop__segunda {
+    display: none;
+  }
+}
+
 .footerTop__tercera {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -459,6 +483,16 @@ a:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 2rem;
+}
+
+.footerTop__tercera .textoFooter {
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 576px) {
+  .footerTop__tercera .textoFooter {
+    text-align: center;
+  }
 }
 
 .footerTop .textoFooter {
@@ -519,6 +553,14 @@ a:hover {
           justify-content: flex-start;
 }
 
+@media screen and (max-width: 576px) {
+  .footerTop .textoFooter__logos {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .footerTop .lineaFooter {
   width: 4rem;
   height: 1px;
@@ -536,6 +578,16 @@ a:hover {
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 8rem;
+}
+
+@media screen and (max-width: 576px) {
+  .footerBottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
 }
 
 .footerBottom__col h4 {
