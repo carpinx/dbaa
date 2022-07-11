@@ -373,7 +373,7 @@ main {
 }
 
 .textoHome h4 {
-  font-size: 2.2rem;
+  font-size: 2rem;
   text-transform: uppercase;
   font-family: "Helvetica", sans-serif;
 }
@@ -402,6 +402,7 @@ main {
   opacity: 0;
   -webkit-transition: opacity .3s;
   transition: opacity .3s;
+  font-style: italic;
 }
 
 @media screen and (max-width: 576px) {
@@ -422,6 +423,12 @@ a:hover {
   margin-bottom: 8rem;
 }
 
+@media screen and (max-width: 576px) {
+  .footerTop {
+    margin-bottom: 3rem;
+  }
+}
+
 .footerTop__primera {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -436,25 +443,18 @@ a:hover {
 
 .footerTop__primera img {
   max-width: 100%;
-}
-
-@media screen and (max-width: 576px) {
-  .footerTop__primera img {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-  }
+  margin-bottom: 2rem;
 }
 
 @media screen and (max-width: 576px) {
   .footerTop__primera .logoCamara {
-    max-width: 294px;
+    max-width: 180px;
   }
 }
 
 @media screen and (max-width: 576px) {
   .footerTop__primera .textoFooter .texto {
-    text-align: center;
+    text-align: left;
   }
 }
 
@@ -497,7 +497,7 @@ a:hover {
 
 @media screen and (max-width: 576px) {
   .footerTop__tercera .textoFooter {
-    text-align: center;
+    text-align: left;
   }
 }
 
@@ -507,6 +507,15 @@ a:hover {
 
 .footerTop__tercera .mecenazgo {
   width: 200px;
+}
+
+.footerTop__tercera img {
+  height: 50px;
+}
+
+.footerTop__tercera img.mecenazgo {
+  width: 150px;
+  height: auto;
 }
 
 .footerTop .textoFooter {
@@ -607,6 +616,12 @@ a:hover {
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 30px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -633,5 +648,17 @@ a:hover {
 
 .footerBottom__col__img .wip3d {
   width: 60px;
+}
+
+@media screen and (max-width: 576px) {
+  .footerBottom__col__img .wip3d {
+    width: 50px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .centermobile {
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,6 +1,10 @@
 .footerTop {
     margin-bottom: 8rem;
 
+    @include movil {
+        margin-bottom: 3rem;
+    }
+
     &__primera {
         display: flex;
         flex-direction: column;
@@ -9,16 +13,13 @@
     
         img {
             max-width: 100%;
-
-            @include movil {
-                align-self: center;
-            }
+            margin-bottom: 2rem;
         }
 
         .logoCamara {
             
             @include movil {
-                max-width: 294px;
+                max-width: 180px;
             }
         }
 
@@ -27,7 +28,7 @@
             .texto {
 
                 @include movil {
-                    text-align: center;
+                    text-align: left;
                 }
             }
 
@@ -59,7 +60,7 @@
         .textoFooter {
             
             @include movil {
-                text-align: center;
+                text-align: left;
             }
 
             .portfolio {
@@ -69,6 +70,15 @@
 
         .mecenazgo {
             width: 200px;
+        }
+
+        img {
+            height: 50px;
+
+            &.mecenazgo {
+                width: 150px;
+                height: auto;
+            }
         }
     }
     
@@ -150,6 +160,8 @@
     @include movil {
         flex-direction: column;
         gap: 30px;
+        align-items: center;
+        justify-content: center;
     }
 
     &__col {
@@ -170,7 +182,21 @@
 
             .wip3d {
                 width: 60px;
+
+                @include movil {
+                    width: 50px;
+                }
             }
         }
+    }
+}
+
+
+
+
+.centermobile {
+
+    @include movil {
+        text-align: center;
     }
 }
