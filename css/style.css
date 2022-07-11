@@ -189,11 +189,11 @@ main {
 }
 
 .quienesSomos {
-  -ms-grid-row: 6;
+  -ms-grid-row: 5;
   -ms-grid-row-span: 5;
   -ms-grid-column: 11;
   -ms-grid-column-span: 5;
-  grid-area: 6 / 11 / span 5 / span 5;
+  grid-area: 5 / 11 / span 5 / span 5;
 }
 
 .palto {
@@ -292,11 +292,11 @@ main {
 }
 
 .proximamente {
-  -ms-grid-row: 38;
+  -ms-grid-row: 37;
   -ms-grid-row-span: 3;
   -ms-grid-column: 12;
   -ms-grid-column-span: 5;
-  grid-area: 38 / 12 / span 3 / span 5;
+  grid-area: 37 / 12 / span 3 / span 5;
 }
 
 .forma3 {
@@ -404,6 +404,12 @@ main {
   transition: opacity .3s;
 }
 
+@media screen and (max-width: 576px) {
+  .imgHome p, .carousel p {
+    opacity: 1;
+  }
+}
+
 .imgHome:hover p, .carousel:hover p {
   opacity: 1;
 }
@@ -452,6 +458,10 @@ a:hover {
   }
 }
 
+.footerTop__primera .textoFooter .portfolio {
+  color: #63a0ff;
+}
+
 .footerTop__segunda {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -485,14 +495,18 @@ a:hover {
   gap: 2rem;
 }
 
-.footerTop__tercera .textoFooter {
-  margin-top: 30px;
-}
-
 @media screen and (max-width: 576px) {
   .footerTop__tercera .textoFooter {
     text-align: center;
   }
+}
+
+.footerTop__tercera .textoFooter .portfolio {
+  color: #63a0ff;
+}
+
+.footerTop__tercera .mecenazgo {
+  width: 200px;
 }
 
 .footerTop .textoFooter {
@@ -505,6 +519,12 @@ a:hover {
 
 .footerTop .textoFooter h4 {
   font-size: 2.2rem;
+  text-transform: uppercase;
+  font-family: "Helvetica", sans-serif;
+}
+
+.footerTop .textoFooter h5 {
+  font-size: 1.8rem;
   text-transform: uppercase;
   font-family: "Helvetica", sans-serif;
 }
@@ -574,9 +594,9 @@ a:hover {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   padding-bottom: 8rem;
 }
 
@@ -609,6 +629,9 @@ a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100%;
+}
+
+.footerBottom__col__img .wip3d {
+  width: 60px;
 }
 /*# sourceMappingURL=style.css.map */
